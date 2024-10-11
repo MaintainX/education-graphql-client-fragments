@@ -1,18 +1,20 @@
-import { gql, TypedDocumentNode, useQuery } from "@apollo/client";
+import {
+  gql,
+  TypedDocumentNode,
+  useSuspenseQuery
+} from "@apollo/client";
 
 import "react-datepicker/dist/react-datepicker.css";
+import { FeaturedListingContainer } from "../components/FeaturedListingContainer";
+import { FeaturedListingTitle } from "../components/FeaturedListingTitle";
+import { HomePageHero } from "../components/HomePageHero";
+import { InflationButton } from "../components/InflationButton";
+import { ListingItem } from "../components/ListingItem";
+import { ListingList } from "../components/ListingList";
 import {
   GetFeaturedListingsQuery,
   GetFeaturedListingsQueryVariables,
 } from "./__generated__/home.types";
-import { PageSpinner } from "../components/PageSpinner";
-import { PageError } from "../components/PageError";
-import { HomePageHero } from "../components/HomePageHero";
-import { ListingList } from "../components/ListingList";
-import { ListingItem } from "../components/ListingItem";
-import { FeaturedListingTitle } from "../components/FeaturedListingTitle";
-import { FeaturedListingContainer } from "../components/FeaturedListingContainer";
-import { InflationButton } from "../components/InflationButton";
 
 export const FEATURED_LISTINGS: TypedDocumentNode<
   GetFeaturedListingsQuery,
@@ -21,7 +23,7 @@ export const FEATURED_LISTINGS: TypedDocumentNode<
   query GetFeaturedListings {
     featuredListings {
       id
-      ...ListingItem_listing
+      ...ListingItem_listing @nonreactive
     }
   }
 
@@ -29,27 +31,21 @@ export const FEATURED_LISTINGS: TypedDocumentNode<
 `;
 
 export function Home() {
-  const { data, loading, error } = useQuery(FEATURED_LISTINGS);
+  const { data } = useSuspenseQuery(FEATURED_LISTINGS);
 
   return (
     <>
       <HomePageHero />
-      {loading ? (
-        <PageSpinner />
-      ) : error ? (
-        <PageError error={error} />
-      ) : (
-        <FeaturedListingContainer>
-          <FeaturedListingTitle>
-            Ideas for your next stellar trip
-          </FeaturedListingTitle>
-          <ListingList>
-            {data?.featuredListings.map((listing) => (
-              <ListingItem key={listing.id} listing={listing} />
-            ))}
-          </ListingList>
-        </FeaturedListingContainer>
-      )}
+      <FeaturedListingContainer>
+        <FeaturedListingTitle>
+          Ideas for your next stellar trip
+        </FeaturedListingTitle>
+        <ListingList>
+          {data.featuredListings.map((listing) => (
+            <ListingItem key={listing.id} listing={listing} />
+          ))}
+        </ListingList>
+      </FeaturedListingContainer>
       <InflationButton />
     </>
   );

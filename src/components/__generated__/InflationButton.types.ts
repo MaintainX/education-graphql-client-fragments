@@ -5,5 +5,9 @@ export type GetFeaturedListingsForInflationQueryVariables = GraphQLTypes.Exact<{
 }>;
 
 export type GetFeaturedListingsForInflationQuery = {
-  featuredListings: Array<{ __typename: "Listing"; id: string }>;
+  featuredListings: Array<{
+    __typename: "Listing";
+    id: string;
+    costPerNight: number;
+  }>;
 };

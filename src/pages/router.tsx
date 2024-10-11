@@ -5,14 +5,14 @@ import {
 } from "react-router-dom";
 
 import { CreateListing } from "./add-listing";
+import { HostBookings } from "./bookings";
 import { EditListing } from "./edit-listing";
 import { Home } from "./home";
-import { HostBookings } from "./bookings";
 import { HostListings } from "./host-listings";
-import { HostPastBookings } from "./past-bookings";
 import { Listing } from "./listing";
 import { Listings } from "./listings";
 import { Login } from "./login";
+import { HostPastBookings } from "./past-bookings";
 import { PastTrips } from "./past-trips";
 import { Profile } from "./profile";
 import { Root } from "./root";

@@ -1,14 +1,14 @@
-import { gql } from "@apollo/client";
+import { gql, useFragment } from "@apollo/client";
 import { Flex } from "@chakra-ui/react";
 import { ListingItemContainer } from "./ListingItem/Container";
-import { ListingItemImage } from "./ListingItem/Image";
-import { ListingItemDetails } from "./ListingItem/Details";
-import { ListingItemTitle } from "./ListingItem/Title";
-import { ListingItemDescription } from "./ListingItem/Description";
-import { ListingItemLocationType } from "./ListingItem/LocationType";
-import { ListingItemRating } from "./ListingItem/Rating";
-import { ListingItemNumOfBeds } from "./ListingItem/NumOfBeds";
 import { ListingItemCost } from "./ListingItem/Cost";
+import { ListingItemDescription } from "./ListingItem/Description";
+import { ListingItemDetails } from "./ListingItem/Details";
+import { ListingItemImage } from "./ListingItem/Image";
+import { ListingItemLocationType } from "./ListingItem/LocationType";
+import { ListingItemNumOfBeds } from "./ListingItem/NumOfBeds";
+import { ListingItemRating } from "./ListingItem/Rating";
+import { ListingItemTitle } from "./ListingItem/Title";
 import { ListingItem_listingFragment } from "./__generated__/ListingItem.types";
 
 interface ListingItemProps {
@@ -18,10 +18,19 @@ interface ListingItemProps {
 }
 
 export function ListingItem({
-  listing,
+  listing: _listing,
   checkInDate,
   checkOutDate,
 }: ListingItemProps) {
+  const fragment = useFragment<ListingItem_listingFragment>({
+    fragment: ListingItem.fragments.listing,
+    from: _listing,
+    fragmentName: "ListingItem_listing",
+  });
+  if (!fragment.complete) {
+    return null;
+  }
+  const listing = fragment.data;
   return (
     <ListingItemContainer
       to={`/listing/${listing.id}/?${getListingParams(checkInDate, checkOutDate)}`}
@@ -54,7 +63,7 @@ ListingItem.fragments = {
       numOfBeds
       overallRating
       locationType
-      ...ListingItemCost_listing
+      ...ListingItemCost_listing @nonreactive
     }
 
     ${ListingItemCost.fragments.listing}
