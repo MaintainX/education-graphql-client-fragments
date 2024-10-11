@@ -1,0 +1,453 @@
+[
+  {
+    "__typename": "Listing",
+    "id": "listing-1",
+    "title": "Cave campsite in snowy MoundiiX",
+    "description": "Enjoy this amazing cave campsite in snow MoundiiX, where you'll be one with the nature and wildlife in this wintery planet. All space survival amenities are available. We have complementary dehydrated wine upon your arrival. Check in between 34:00 and 72:00. The nearest village is 3AU away, so please plan accordingly. Recommended for extreme outdoor adventurers.",
+    "photoThumbnail": "https://res.cloudinary.com/apollographql/image/upload/v1644350721/odyssey/federation-course2/illustrations/listings-01.png",
+    "numOfBeds": 2,
+    "overallRating": 3.75,
+    "locationType": "CAMPSITE",
+    "costPerNight": 120,
+    "amenities": [
+      {
+        "name": "Towel",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Oxygen",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Prepackaged meals",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "SOS button",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Meteor shower shield",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Meteor showers",
+        "category": "OUTDOORS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Wildlife",
+        "category": "OUTDOORS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Panic button",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Water recycler",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "First-aid kit",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Emergency life support systems",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Universal translator",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Aquatic breathing aid",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Acid lake access",
+        "category": "OUTDOORS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Time travel paradoxes",
+        "category": "OUTDOORS",
+        "__typename": "Amenity"
+      }
+    ],
+    "reviews": [
+      {
+        "text": "Wow, what an experience! I've never stayed in a cave before, so I was a little unprepared. Luckily, this listing had all the amenities I needed to feel safe and prepared for anything. Seriously, great experience. Giving 4 stars because the flies kept coming in at night through a hole in the cave mesh entrance.",
+        "author": {
+          "id": "user-2",
+          "name": "Jackenn",
+          "profilePicture": "https://res.cloudinary.com/apollographql/image/upload/odyssey/airlock/user-2.png",
+          "__typename": "Guest"
+        },
+        "rating": 4,
+        "__typename": "Review"
+      },
+      {
+        "text": "100% enjoyed the wilderness experience. Do not book if you are not an adventurer and lover of the outdoors.",
+        "author": {
+          "id": "user-7",
+          "name": "Cara",
+          "profilePicture": "https://res.cloudinary.com/apollographql/image/upload/odyssey/airlock/user-7.png",
+          "__typename": "Guest"
+        },
+        "rating": 5,
+        "__typename": "Review"
+      },
+      {
+        "text": "I thought this was going to be a cozy cave, but I was sorely disappointed. The mattress was hard, I could feel stones digging into my back. And it was COLD. They need to be more clear about this on the description.",
+        "author": {
+          "id": "user-8",
+          "name": "Wardy",
+          "profilePicture": "https://res.cloudinary.com/apollographql/image/upload/odyssey/airlock/user-8.png",
+          "__typename": "Guest"
+        },
+        "rating": 1,
+        "__typename": "Review"
+      },
+      {
+        "text": "Description was accurate. It was indeed a cave campsite in the snowy part of the planet. Exactly what I needed.",
+        "author": {
+          "id": "user-9",
+          "name": "Brise",
+          "profilePicture": "https://res.cloudinary.com/apollographql/image/upload/odyssey/airlock/user-9.png",
+          "__typename": "Guest"
+        },
+        "rating": 5,
+        "__typename": "Review"
+      }
+    ],
+    "host": {
+      "id": "user-1",
+      "name": "Eves",
+      "profilePicture": "https://res.cloudinary.com/apollographql/image/upload/odyssey/airlock/user-1.png",
+      "profileDescription": "I've been to 15 different planets and decided to make a home for myself and others in my favourites. Each planet and location has its own distinct environment, so read the description carefully. I have equipped them all with the necessary amenities.",
+      "overallRating": 4.166666666666667,
+      "__typename": "Host"
+    },
+    "bookings": [
+      {
+        "id": "booking-1",
+        "checkInDate": "Sep 8, 2021",
+        "checkOutDate": "Sep 17, 2021",
+        "__typename": "Booking"
+      },
+      {
+        "id": "booking-2",
+        "checkInDate": "Oct 10, 2025",
+        "checkOutDate": "Oct 11, 2025",
+        "__typename": "Booking"
+      },
+      {
+        "id": "booking-3",
+        "checkInDate": "Oct 12, 2021",
+        "checkOutDate": "Oct 16, 2021",
+        "__typename": "Booking"
+      },
+      {
+        "id": "booking-4",
+        "checkInDate": "Jul 4, 2021",
+        "checkOutDate": "Jul 6, 2021",
+        "__typename": "Booking"
+      },
+      {
+        "id": "booking-12",
+        "checkInDate": "Oct 4, 2025",
+        "checkOutDate": "Oct 30, 2025",
+        "__typename": "Booking"
+      },
+      {
+        "id": "booking-13",
+        "checkInDate": "Mar 4, 2025",
+        "checkOutDate": "Mar 7, 2025",
+        "__typename": "Booking"
+      },
+      {
+        "id": "booking-15",
+        "checkInDate": "May 4, 2020",
+        "checkOutDate": "May 7, 2020",
+        "__typename": "Booking"
+      }
+    ]
+  },
+  {
+    "__typename": "Listing",
+    "id": "listing-2",
+    "title": "Cozy yurt in Mraza",
+    "description": "Thiz cozy yurt has an aerodyne hull and efficient sublight engines. It is equipped with an advanced sensor system and defensive force shield. Meteor showers are quite common, please rest assured that our Kevlar-level shields will keep you safe from any space debris. Mraza suns are known to have high levels of UV hyper radiation, which we counteract with the yurt's UV protection shield.",
+    "photoThumbnail": "https://res.cloudinary.com/apollographql/image/upload/v1644350839/odyssey/federation-course2/illustrations/listings-02.png",
+    "numOfBeds": 1,
+    "overallRating": 5,
+    "locationType": "ROOM",
+    "costPerNight": 592,
+    "amenities": [
+      {
+        "name": "Interdimensional wifi",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Adjustable gravity",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Wormhole trash chute",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Multi-planetary cable TV",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Towel",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Quantum microwave",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Cryochamber",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Universal remote",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Retractable moonroof",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Cosmic jacuzzi",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Heated sleeping pods",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Panic button",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Emergency life support systems",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "First-aid kit",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Meteor shower shield",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Space view",
+        "category": "OUTDOORS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Meteor showers",
+        "category": "OUTDOORS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Hydroponic garden",
+        "category": "OUTDOORS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "SOS button",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Oxygen",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Water recycler",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Universal translator",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      }
+    ],
+    "reviews": [
+      {
+        "text": "The COOLEST yurt I've ever been in!!! Check it out, you won't regret it. The force shield is next level, we had a meteor shower come in the last night and besides a few rumbles, you couldn't even tell!",
+        "author": {
+          "id": "user-3",
+          "name": "Athes",
+          "profilePicture": "https://res.cloudinary.com/apollographql/image/upload/odyssey/airlock/user-3.png",
+          "__typename": "Guest"
+        },
+        "rating": 5,
+        "__typename": "Review"
+      }
+    ],
+    "host": {
+      "id": "user-1",
+      "name": "Eves",
+      "profilePicture": "https://res.cloudinary.com/apollographql/image/upload/odyssey/airlock/user-1.png",
+      "profileDescription": "I've been to 15 different planets and decided to make a home for myself and others in my favourites. Each planet and location has its own distinct environment, so read the description carefully. I have equipped them all with the necessary amenities.",
+      "overallRating": 4.166666666666667,
+      "__typename": "Host"
+    },
+    "bookings": [
+      {
+        "id": "booking-5",
+        "checkInDate": "Jan 1, 2024",
+        "checkOutDate": "Jan 4, 2024",
+        "__typename": "Booking"
+      },
+      {
+        "id": "booking-6",
+        "checkInDate": "Feb 7, 2024",
+        "checkOutDate": "Feb 11, 2024",
+        "__typename": "Booking"
+      },
+      {
+        "id": "booking-7",
+        "checkInDate": "Jun 6, 2024",
+        "checkOutDate": "Jun 17, 2024",
+        "__typename": "Booking"
+      },
+      {
+        "id": "booking-8",
+        "checkInDate": "May 3, 2021",
+        "checkOutDate": "May 5, 2021",
+        "__typename": "Booking"
+      },
+      {
+        "id": "booking-9",
+        "checkInDate": "Nov 5, 2024",
+        "checkOutDate": "Dec 1, 2024",
+        "__typename": "Booking"
+      }
+    ]
+  },
+  {
+    "__typename": "Listing",
+    "id": "listing-3",
+    "title": "Repurposed mid century aircraft in Kessail",
+    "description": "Enjoy this floaty, repurposed aircraft reminiscent of Earth’s former converted airstreams. Includes lake access!",
+    "photoThumbnail": "https://res.cloudinary.com/apollographql/image/upload/v1644353887/odyssey/federation-course2/illustrations/listings-03.png",
+    "numOfBeds": 5,
+    "overallRating": 2,
+    "locationType": "SPACESHIP",
+    "costPerNight": 313,
+    "amenities": [
+      {
+        "name": "Adjustable gravity",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Quantum microwave",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Retractable moonroof",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Wormhole trash chute",
+        "category": "ACCOMMODATION_DETAILS",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Water recycler",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Panic button",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      },
+      {
+        "name": "Emergency life support systems",
+        "category": "SPACE_SURVIVAL",
+        "__typename": "Amenity"
+      }
+    ],
+    "reviews": [
+      {
+        "text": "Meh, could be better honestly. I was expecting more. The lake was the only good part.",
+        "author": {
+          "id": "user-8",
+          "name": "Wardy",
+          "profilePicture": "https://res.cloudinary.com/apollographql/image/upload/odyssey/airlock/user-8.png",
+          "__typename": "Guest"
+        },
+        "rating": 2,
+        "__typename": "Review"
+      }
+    ],
+    "host": {
+      "id": "user-1",
+      "name": "Eves",
+      "profilePicture": "https://res.cloudinary.com/apollographql/image/upload/odyssey/airlock/user-1.png",
+      "profileDescription": "I've been to 15 different planets and decided to make a home for myself and others in my favourites. Each planet and location has its own distinct environment, so read the description carefully. I have equipped them all with the necessary amenities.",
+      "overallRating": 4.166666666666667,
+      "__typename": "Host"
+    },
+    "bookings": [
+      {
+        "id": "booking-10",
+        "checkInDate": "Jan 1, 2024",
+        "checkOutDate": "Feb 9, 2024",
+        "__typename": "Booking"
+      },
+      {
+        "id": "booking-11",
+        "checkInDate": "Jul 4, 2021",
+        "checkOutDate": "Jul 30, 2021",
+        "__typename": "Booking"
+      },
+      {
+        "id": "booking-14",
+        "checkInDate": "Mar 4, 2025",
+        "checkOutDate": "Mar 7, 2025",
+        "__typename": "Booking"
+      }
+    ]
+  }
+]

@@ -5,7 +5,6 @@ export type GetListingDetailsQueryVariables = GraphQLTypes.Exact<{
 }>;
 
 export type GetListingDetailsQuery = {
-  me: { __typename: "Guest"; id: string } | { __typename: "Host"; id: string };
   listing: {
     __typename: "Listing";
     id: string;
@@ -54,4 +53,8 @@ export type GetListingDetailsQuery = {
       checkOutDate: string;
     } | null>;
   } | null;
+};
+
+export type MeFragment = {
+  me: { __typename: "Guest"; id: string } | { __typename: "Host"; id: string };
 };

@@ -1,0 +1,5 @@
+{
+  "id": "user-2",
+  "profilePicture": "https://res.cloudinary.com/apollographql/image/upload/odyssey/airlock/user-2.png",
+  "__typename": "Guest"
+}
